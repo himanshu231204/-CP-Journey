@@ -1,0 +1,107 @@
+📘 Important STL Containers for Competitive Programming
+
+1️⃣ vector
+🔹 Dynamic array
+🔹 Fast access via index
+🔹 Useful for arrays, graphs, dynamic lists
+🔹 Syntax: vector<int> v;
+
+2️⃣ pair
+🔹 Holds two values together
+🔹 Useful in sorting with value-index, or edges in graphs
+🔹 Syntax: pair<int, int> p = {a, b};
+
+3️⃣ set
+🔹 Stores unique sorted elements
+🔹 Useful for finding/removing duplicates, fast search
+🔹 O(log n) insertion/deletion
+🔹 Syntax: set<int> s;
+
+4️⃣ multiset
+🔹 Like set, but allows duplicates
+🔹 Useful when duplicates matter (e.g., freq of values)
+🔹 Syntax: multiset<int> ms;
+
+5️⃣ unordered_set
+🔹 Stores unique elements (no order)
+🔹 Faster average-case O(1) operations
+🔹 Syntax: unordered_set<int> us;
+
+6️⃣ map
+🔹 Stores key-value pairs in sorted order
+🔹 Useful for frequency maps, hash tables
+🔹 Syntax: map<int, int> mp;
+
+7️⃣ unordered_map
+🔹 Like map, but faster (average O(1)) & unordered
+🔹 Syntax: unordered_map<string, int> ump;
+
+8️⃣ stack
+🔹 LIFO (Last In First Out)
+🔹 Useful for DFS, expression parsing, bracket matching
+🔹 Syntax: stack<int> s;
+
+9️⃣ queue
+🔹 FIFO (First In First Out)
+🔹 Useful for BFS, level-order traversal
+🔹 Syntax: queue<int> q;
+
+🔟 deque (Double-ended queue)
+🔹 Insertion/removal from both ends
+🔹 Useful for sliding window problems
+🔹 Syntax: deque<int> dq;
+
+1️⃣1️⃣ priority_queue
+🔹 Max heap by default
+🔹 Useful for Dijkstra, Greedy problems
+🔹 Syntax:
+    - Max heap: priority_queue<int> pq;
+    - Min heap: priority_queue<int, vector<int>, greater<int>> pq;
+
+1️⃣2️⃣ bitset
+🔹 Space-efficient way to store 0/1 flags
+🔹 Useful for sieve of Eratosthenes, bitmask DP
+🔹 Syntax: bitset<10000001> bs;
+
+
+
+🔁 Extra Useful STL Components (Advanced / Situational)
+
+1️⃣ list
+🔹 Doubly linked list
+🔹 Useful in rare cases needing fast insertion/deletion from middle
+🔹 Syntax: list<int> l;
+
+2️⃣ array (std::array)
+🔹 Fixed-size array with STL-like functions
+🔹 Safer and cleaner than C-style arrays
+🔹 Syntax: array<int, 100> arr;
+
+3️⃣ tuple
+🔹 Like pair but for 3+ values
+🔹 Used in graphs, sorting with multiple keys
+🔹 Syntax: tuple<int, int, int> t;
+
+4️⃣ set / map with custom comparator
+🔹 For sorting in descending/custom logic
+🔹 Syntax: set<int, greater<int>> s;
+
+5️⃣ multimap / unordered_multimap
+🔹 Like map but allows duplicate keys
+🔹 Useful for certain greedy or frequency-based problems
+
+6️⃣ string (and its methods)
+🔹 Built-in STL string has powerful functions
+🔹 Eg: `substr`, `find`, `erase`, `insert`, `reverse`
+
+7️⃣ stringstream
+🔹 Used for parsing input strings
+🔹 Useful in problems involving parsing numbers/words
+🔹 Syntax: stringstream ss(str);
+
+8️⃣ queue-based variants
+🔹 priority_queue with custom comparator (for structs, pairs, etc.)
+🔹 deque for monoqueue tricks
+
+9️⃣ STL algorithms (not containers but VERY useful)
+🔹 `sort(all(v))`, `binary_search()`, `lower_bound()`, `upper_bound()`, `reverse()`, `accumulate()`, `count()`, etc.
